@@ -66,7 +66,7 @@
     {/each}
 </Header>
 
-<main>
+<main class="antialiased font-chakra-petch text-[#ffffff] bg-[#612378]">
     <Hero {...heroPackage} />
     <Information {...informationPackage} />
     <Review>
@@ -76,3 +76,36 @@
     </Review>
     <Contact {...contactPackage} />
 </main>
+
+<style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    * {
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Chakra Petch";
+        font-weight: 300;
+        font-style: normal;
+        src: url(/fonts/chakra-petch-light.woff2) format("woff2");
+    }
+
+    @font-face {
+        font-family: "Chakra Petch";
+        font-weight: 400;
+        font-style: normal;
+        src: url(/fonts/chakra-petch-regular.woff2) format("woff2");
+    }
+
+    @font-face {
+        font-family: "Chakra Petch";
+        font-weight: 500;
+        font-style: normal;
+        src: url(/fonts/chakra-petch-medium.woff2) format("woff2");
+    }
+</style>
